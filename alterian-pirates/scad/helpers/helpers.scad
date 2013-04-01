@@ -1,24 +1,23 @@
 
 
-module modSlot(translate, rotate, size, slack, shipOrModule) {
-	
-		realSlack = shipOrModule == false ? slack : -slack;
+module modSlot(translate, rotate, size, slack) {
 
-		newSize = [size[0] + realSlack, size[1] + realSlack, size[2] + realSlack];
+		newSize = [size[0] + slack, size[1] + slack, size[2] + slack];
 
 	translate(translate)
 	rotate(rotate)
 		cube(size=newSize, center= true);
 }
 
-module wingSlot(translate, rotate, size, slack, shipOrModule) {
-	modSlot(translate, rotate, size, slack, shipOrModule);
+
+module wingSlot(translate, rotate, size, slack) {
+	modSlot(translate, rotate, size, slack);
 }
 
-module engineSlot(translate, rotate, size, slack, shipOrModule) {
-	modSlot(translate, rotate, size, slack, shipOrModule);
+module engineSlot(translate, rotate, size, slack) {
+	modSlot(translate, rotate, size, slack);
 }
 
-module poleSlot(translate, rotate, size, slack, shipOrModule) {
-	modSlot(translate, rotate, size, slack, shipOrModule);
+module poleSlot(translate, rotate, size, slack) {
+	modSlot(translate, rotate, size, slack);
 }
