@@ -1,6 +1,6 @@
 // licensed under the Creative Commons - GNU GPL license.
 
-use <helpers/helpers.scad>
+use <../helpers/helpers.scad>
 
 shipOrModule = true;
 slack = 0.15;
@@ -11,9 +11,6 @@ module load() {
 		import("common.blend.stl", convexity = 10);
 		
 		modSlot( translate = [0, -13, 11], rotate = [0, 0, 90], size = [6, 6, 4], slack = slack, shipOrModule = shipOrModule);		
-
-		wingSlot(translate = [-10, -8, 5], size = [7,5,1], slack = slack, shipOrModule = shipOrModule);
-		wingSlot(translate = [10, -8, 5], size = [7,5,1], slack = slack, shipOrModule = shipOrModule);
 		
 		modSlot(translate = [4, -8, 7], size = [3,3,4], slack = slack, shipOrModule = shipOrModule);
 		modSlot(translate = [-4, -8,7], size = [3,3,4], slack = slack, shipOrModule = shipOrModule);

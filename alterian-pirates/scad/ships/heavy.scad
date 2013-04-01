@@ -1,6 +1,6 @@
 // licensed under the Creative Commons - GNU GPL license.
 
-use <helpers/helpers.scad>
+use <../helpers/helpers.scad>
 
 slack = 0.3;
 
@@ -11,9 +11,6 @@ module load() {
 		
 		modSlot( [0, -13, 9], [0, 0, 90], [6, 6, 4], slack);		
 
-		wingSlot([-10, -15, 6], [0,0,0], [6,6,4], slack);
-		wingSlot([10, -15, 6], [0,0,0], [6,6,4], slack);
-		
 		modSlot([3.5, -34, 8], [0,0,0], [3,3,4], slack);
 		modSlot([-3.5, -34, 8], [0,0,0], [3,3,4], slack);
 
