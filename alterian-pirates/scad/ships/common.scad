@@ -1,23 +1,25 @@
 // licensed under the Creative Commons - GNU GPL license.
+use <../../../helpers/helpers.scad>
 
-use <../helpers/helpers.scad>
-
-shipOrModule = true;
-slack = 0.15;
+slack = 0.25;
 
 module load() {
 	difference()
 	{
 		import("common.blend.stl", convexity = 10);
 		
-		modSlot( translate = [0, -13, 11], rotate = [0, 0, 90], size = [6, 6, 4], slack = slack, shipOrModule = shipOrModule);		
+		//weapon slot on the back
+		modSlot( [0, -3, 8], [0, 0, 90], 1.5, 4, slack);
 		
-		modSlot(translate = [4, -8, 7], size = [3,3,4], slack = slack, shipOrModule = shipOrModule);
-		modSlot(translate = [-4, -8,7], size = [3,3,4], slack = slack, shipOrModule = shipOrModule);
+		//util slots on the back
+		modSlot( [4, -11, 8], [0, 0, 90], 1.5, 4, slack);
+		modSlot( [-4, -11, 8], [0, 0, 90], 1.5, 4, slack);
+
+		//engineslot
+		modSlot( [0, -19, 3.5], [0, 270, 90], 1.5, 4, slack);
 		
-		engineSlot( translate = [0, -19, 3.5], rotate = [0, 270, 90], size = [3, 3, 4], slack = slack, shipOrModule = shipOrModule);
-		
-		poleSlot( translate = [0,0, 2.9], rotate = [0,0,0], size = [3, 3, 6], slack = slack, shipOrModule = shipOrModule);
+		//pole slot
+		modSlot( [0,0, 2], [0,0,0], 1.5, 5, slack);
 	}
 }
 
