@@ -1,7 +1,7 @@
 // licensed under the Creative Commons - GNU GPL license.
 use <../helpers/helpers.scad>
 
-slack = -0.1;
+slack = -0.5;
 
 module load() {
 	difference()

@@ -3,15 +3,15 @@
 use <helpers/helpers.scad>
 
 shipOrModule = true;
-slack = 0.15;
+slack = 0.5;
 
 module load() {
 	difference()
 	{
 		import("fast.blend.stl", convexity = 10);
 		
-		wingSlot(translate = [-10, -8, 5], size = [7,5,1], slack = slack, shipOrModule = shipOrModule);
-		wingSlot(translate = [10, -8, 5], size = [7,5,1], slack = slack, shipOrModule = shipOrModule);
+		wingSlot(translate = [-8, -8, 5], size = [7,5,1], slack = slack, shipOrModule = shipOrModule);
+		wingSlot(translate = [8, -8, 5], size = [7,5,1], slack = slack, shipOrModule = shipOrModule);
 		
 		modSlot(translate = [0, -8,7], size = [3,3,4], slack = slack, shipOrModule = shipOrModule);
 		

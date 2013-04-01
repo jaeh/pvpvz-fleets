@@ -9,7 +9,6 @@ module modSlot(translate, rotate, size, slack) {
 		cube(size=newSize, center= true);
 }
 
-
 module wingSlot(translate, rotate, size, slack) {
 	modSlot(translate, rotate, size, slack);
 }
