@@ -20,8 +20,8 @@ module load() {
 		modSlot([-17, -28, 4], [0,0,0], 1.5, 4, slack);
 
 		//engine slots
-		modSlot([3, -45, 4], [0, 270, 90], 1.5, 4, slack);
-		modSlot([-3, -45, 4], [0, 270, 90], 1.5, 4, slack);
+		//modSlot([3, -45, 4], [0, 270, 90], 1.5, 4, slack);
+		//modSlot([-3, -45, 4], [0, 270, 90], 1.5, 4, slack);
 		
 		//pole slot
 		modSlot([0,-15, 2.9], [0,0,0], 3, 10, slack);
