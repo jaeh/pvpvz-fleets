@@ -9,10 +9,10 @@ module load() {
 	{
 		import("common.blend.stl", convexity = 10);
 		
-		#modSlot( [0, 22, 0], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [0, 14.5, 0], [0, 0, 0], 1.5, 5, slack);
 
 		//poleslot,
-		#modSlot( [0, 6, 0], [0, 0, 0], 1.5, 11, slack);
+		#modSlot( [0, 0, 0], [0, 0, 0], 1.5, 10, slack);
 	}
 }
 

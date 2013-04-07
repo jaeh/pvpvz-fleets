@@ -10,12 +10,12 @@ module load() {
 		import("heavy.blend.stl", convexity = 10);
 		
 		//weapon/utils slots
-		#modSlot( [0, 18, 0], [0, 0, 0], 1.5, 5, slack);
-		#modSlot( [-3.5, 6, 0], [0, 0, 0], 1.5, 5, slack);
-		#modSlot( [3.5, 6, 0], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [0, 13, 0], [0, 0, 0], 1.5, 7, slack);
+		#modSlot( [-3, 4, 0], [0, 0, 0], 1.5, 8, slack);
+		#modSlot( [3, 4, 0], [0, 0, 0], 1.5, 8, slack);
 
 		//poleslot,
-		#modSlot( [0, 0, 0], [0, 0, 0], 1.5, 10.5, slack);
+		#modSlot( [0, 0, 0], [0, 0, 0], 1.5, 8, slack);
 	}
 }
 
