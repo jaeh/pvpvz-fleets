@@ -6,18 +6,12 @@ slack = 0;
 module load() {
 	difference()
 	{
-		import("fast.blend.stl", convexity = 10);
+		import("fast.blend.stl", convexity = 10);	
 		
-		//weaponslot on top
-		#modSlot( [11, -2, 1], [0,0,0], 1.5, 2.9, slack);
-		#modSlot( [-11, -2, 1], [0,0,0], 1.5, 2.9, slack);
-		
-		//engineslot
-		//modSlot( [0, -16, -0], [90,0, 0], 3, 3, slack);
+		#modSlot( [0, 18, 0], [0,0,0], 1.5, 7, slack);
 		
 		//poleslot
-		modSlot( [0,0, -4], [0,0,0], 1.5, 6, slack);
-
+		#modSlot( [0,0, 0], [0,0,0], 1.5, 10, slack);
 	}
 }
 

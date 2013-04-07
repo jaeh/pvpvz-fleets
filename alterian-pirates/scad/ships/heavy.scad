@@ -13,9 +13,6 @@ module load() {
 		//main weapon on top
 		//modSlot( [0, -12, 10], [0, 0, 90], 3, 4, slack);
 
-		#modSlot( [15, -20, 4], [0, 0, 90], 1.5, 4, slack);
-		#modSlot( [-15, -20, 4], [0, 0, 90], 1.5, 4, slack);
-
 
 		//util slots on top
 		//modSlot([3.5, -34, 8], [0,0,0], 1.5, 4, slack);
@@ -27,7 +24,7 @@ module load() {
 //		modSlot( [-2.5, -43, 3.5], [0, 270, 90], 1.5,4, slack);
 
 		//poleslot
-		modSlot( [0,-15, 2.9], [0,0,0],  1.5, 6, slack);
+		modSlot( [0,-5, 2.9], [0,0,0],  1.5, 6, slack);
 	}
 }
 

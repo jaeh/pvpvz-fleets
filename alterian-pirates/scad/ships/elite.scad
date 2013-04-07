@@ -9,7 +9,7 @@ module load() {
 		import("elite.blend.stl", convexity = 10);
 		
 		//big frontal gun
-		modSlot( [0, 7, 0], [0, 0, 90], 1.5, 8, slack);
+		modSlot( [0, 14, 0], [0, 0, 90], 1.5, 5, slack);
 		
 		//module slots on the back
 		//modSlot([3.5, -29, 12], [0,0,0], 1.5, 4, slack);
@@ -24,7 +24,7 @@ module load() {
 		//modSlot([-3, -45, 4], [0, 270, 90], 1.5, 4, slack);
 		
 		//pole slot
-		modSlot([0,-15, 2.9], [0,0,0], 3, 10, slack);
+		modSlot([0, 0, 2.9], [0,0,0], 3, 5, slack);
 	}
 }
 
