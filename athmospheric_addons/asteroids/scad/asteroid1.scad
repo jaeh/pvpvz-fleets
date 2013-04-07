@@ -3,7 +3,17 @@
 use <../../helpers/helpers.scad>
 
 module load() {
-	import("asteroid1.blend.stl", convexity = 10);
+	cube([1,60,1]);
+	
+	translate([2,0,0]){
+		cube([1,60,1]);
+	}
+	translate([4,0,0]){
+		cube([1,60,1]);
+	}
+	translate([6,0,0]){
+		cube([1,60,1]);
+	}
 }
 
 load();
