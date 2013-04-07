@@ -9,11 +9,11 @@ module load() {
 		import("elite.blend.stl", convexity = 10);
 		
 		//big frontal gun
-		modSlot( [0, 3, 7], [0, 0, 90], 3, 4, slack);
+		modSlot( [0, 7, 0], [0, 0, 90], 1.5, 8, slack);
 		
 		//module slots on the back
-		modSlot([3.5, -29, 12], [0,0,0], 1.5, 4, slack);
-		modSlot([-3.5, -29, 12], [0,0,0], 1.5, 4, slack);
+		//modSlot([3.5, -29, 12], [0,0,0], 1.5, 4, slack);
+		//modSlot([-3.5, -29, 12], [0,0,0], 1.5, 4, slack);
 
 		//wing weapons
 		modSlot([17, -28, 4], [0,0,0], 1.5, 4, slack);

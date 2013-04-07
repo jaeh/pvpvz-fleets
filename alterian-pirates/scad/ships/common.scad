@@ -1,7 +1,7 @@
 // licensed under the Creative Commons - GNU GPL license.
 use <../../../helpers/helpers.scad>
 
-slack = 0.25;
+slack = 0;
 
 module load() {
 	difference()
@@ -12,8 +12,8 @@ module load() {
 		//modSlot( [0, -3, 8], [0, 0, 90], 1.5, 4, slack);
 		
 		//wpn slots on the wings
-		modSlot( [14, -9, 3], [0, 0, 90], 1.5, 4, slack);
-		modSlot( [-14, -9, 3], [0, 0, 90], 1.5, 4, slack);
+		modSlot( [14, -7, 2.5], [0, 0, 90], 1.5, 4, slack);
+		modSlot( [-14, -7, 2.5], [0, 0, 90], 1.5, 4, slack);
 
 		//engineslot
 		//modSlot( [0, -19, 3.5], [0, 270, 90], 1.5, 4, slack);
