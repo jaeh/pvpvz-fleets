@@ -4,26 +4,22 @@ use <../../helpers/helpers.scad>
 
 slack = 0;
 
+
+
+sizes = [[2,1.6], [2, 1.4], [1.8, 1.4], [2, 1]];
+
 module load() {
-	cylinder( 6, 1.6, 1.6, $fn = 100);
-
-	translate([5,0,0]) 
-	{
-		cylinder( 6, 1.7, 1.6, $fn = 100);
-	}
-
-	translate([10,0,0]) 
-	{
-		cylinder( 6, 2, 1.6, $fn = 100);
-	}
-	translate([15,0,0]) 
-	{
-		cylinder( 6, 1.6, 1.4, $fn = 100);
-	}
-	translate([20,0,0]) 
-	{
-		cylinder( 6, 1.6, 1.3, $fn = 100);
+	for (i = [0:3]) {
+		translate([5 * i, 0,0]) 
+		{
+			cylinder( 5.5, sizes[i][0], sizes[i][1], $fn = 100);
+			
+			translate([0, 5, 0]){
+				cylinder( 5.5, sizes[i][0], sizes[i][1], $fn = 100);
+			}	
+		}
 	}
 }
 
 load();
+
