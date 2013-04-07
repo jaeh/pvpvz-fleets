@@ -17,22 +17,23 @@ module load() {
 		
 
 		
-		#modSlot( [15, 12, 5], [0, 0, 0], 1.5, 5, slack);
-		#modSlot( [15, 7, 5], [0, 0, 0], 1.5, 5, slack);
-		#modSlot( [15, 2, 6], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [15, 12, 6], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [15, 7, 7], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [15, 2, 8], [0, 0, 0], 1.5, 5, slack);
 
 		
-		#modSlot( [-15, 12, 5], [0, 0, 0], 1.5, 5, slack);
-		#modSlot( [-15, 7, 5], [0, 0, 0], 1.5, 5, slack);
-		#modSlot( [-15, 2, 6], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [-15, 12, 6], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [-15, 7, 7], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [-15, 2, 8], [0, 0, 0], 1.5, 5, slack);
 
 		//utilslots
-		#modSlot( [0, -6.5, 5	], [0, 0, 0], 1.5, 5, slack);
-		#modSlot( [3, -10.5, 5	], [0, 0, 0], 1.5, 5, slack);
-		#modSlot( [-3, -10.5, 5	], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [5, -5.5, 7], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [-5, -5.5, 7], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [5, -9.5, 7], [0, 0, 0], 1.5, 5, slack);
+		#modSlot( [-5, -9.5, 7], [0, 0, 0], 1.5, 5, slack);
 
 		//poleslot,
-		#modSlot( [0, 6, 0], [0, 0, 0], 1.5, 9, slack);
+		#modSlot( [0, 6, 0], [0, 0, 0], 1.5, 11, slack);
 
 		//#modSlot( [0, 0, 0], [0, 0, 0], 20, 2, slack);
 	}
