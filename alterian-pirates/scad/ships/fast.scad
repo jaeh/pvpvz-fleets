@@ -8,8 +8,11 @@ module load() {
 	{
 		import("fast.blend.stl", convexity = 10);
 		
-		//poleslot
-		#modSlot( [0,0, 0], [0,0,0], 1.5, 10, slack);
+		//wpn slot below tip
+		modSlot( [0,12,0], [0,0,0], 1.5, 5, slack);
+
+		//pole slot
+		modSlot( [0,0, 2], [0,0,0], 1.5, 5, slack);
 	}
 }
 
