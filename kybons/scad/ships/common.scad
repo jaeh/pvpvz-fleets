@@ -12,7 +12,7 @@ module load() {
 		#modSlot( [0, 14.5, 0], [0, 0, 0], 1.5, 5, slack);
 
 		//poleslot,
-		#modSlot( [0, 0, 0], [0, 0, 0], 1.5, 10, slack);
+		#modSlot( [0, 0, 0], [0, 0, 0], 1.5, 89, slack);
 	}
 }
 
