@@ -7,19 +7,18 @@ slack = 0;
 sizes = [[1.6, 1.2], [1.2, 1.6], [1, 1.6], [1.6, 1]];
 
 module load() {
-	union() {
 	for (i = [0:3]) {
 		translate([8 * i, 0, 0]) {
 			difference()
 			{	
-				cylinder( 3, 5, 5, $fn = 20);
-				translate([0,0,2])
+				cube( [10, 10, 5], true);
+
+				translate([0,0,-1.5])
 				{
-					cylinder( 4, sizes[i][0], sizes[i][1], $fn = 100);		
+					#cylinder( 10, sizes[i][0], sizes[i][1], $fn = 10);		
 				}
 			}
 		}
-	}
 	}
 }
 

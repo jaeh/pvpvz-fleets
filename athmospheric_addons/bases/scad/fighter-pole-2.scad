@@ -2,18 +2,17 @@
 
 use <../../helpers/helpers.scad>
 
+sizes = [1.2, 1.4, 1.6, 1.8, 2, 3];
+slack = 0;
+
 module load() {
 	union() {
-		cube([1,60,1]);
-	
-		translate([2,0,0]){
-			cube([1,60,1]);
-		}
-		translate([4,0,0]){
-			cube([1,60,1]);
-		}
-		translate([6,0,0]){
-			cube([1,60,1]);
+		for (i = [0:5]) 
+		{
+			translate([3 * i,0,0])
+			{
+				cube([sizes[i] + slack,60, sizes[i] + slack]);
+			}
 		}
 	}
 }
