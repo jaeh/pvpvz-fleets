@@ -10,8 +10,8 @@ module load() {
 		import("elite.blend.stl", convexity = 10);
 		
 		//weapon/utils slots
-		#modSlot( [3.5, 4, 0], [0, 0, 0], 1.5, 9, slack);
-		#modSlot( [-3.5, 4, 0], [0, 0, 0], 1.5, 9, slack);
+		#modSlot( [3.5, 5, 0], [0, 0, 0], 1.5, 9, slack);
+		#modSlot( [-3.5, 5, 0], [0, 0, 0], 1.5, 9, slack);
 
 		//poleslot,
 		#modSlot( [0, 0, 0], [0, 0, 0], 1.5, 10, slack);
