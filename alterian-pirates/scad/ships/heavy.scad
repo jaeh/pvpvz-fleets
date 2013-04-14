@@ -8,10 +8,10 @@ module load() {
 	{
 		import("heavy.blend.stl", convexity = 10);
 		
-		modSlot( [0, 10, 1], [0,0,0],  1.5, 3, slack);
+		modSlot( [0, 10, 1], [0,0,0],  1.5, 5, slack);
 
 		//poleslot
-		modSlot( [0,0, 2.9], [0,0,0],  1.5, 6, slack);
+		modSlot( [0,0, 2], [0,0,0],  1.5, 5, slack);
 	}
 }
 
