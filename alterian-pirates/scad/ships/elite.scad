@@ -7,7 +7,7 @@ module load() {
 	difference()
 	{
 		import("elite.blend.stl", convexity = 10);
-		
+
 		//big frontal gun
 		modSlot( [0, 14, 0], [0, 0, 90], 1.5, 6, slack);
 
